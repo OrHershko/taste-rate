@@ -1,6 +1,6 @@
 package com.tasterate.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity // Marks this class as a JPA entity (maps to a database table)
 public class Dish {
