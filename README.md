@@ -29,3 +29,6 @@ The restaurant's overall rating is calculated as the average of all its rated di
 - Users can browse restaurants → select dishes → rate them.
 - Users can view their previous ratings.
 - Each restaurant has a dynamic rating based on the average of all dish ratings.
+
+## Future Features
+-search bar
