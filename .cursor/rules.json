@@ -1,0 +1,33 @@
+{
+    "naming": {
+      "backend": {
+        "entity": "PascalCase",
+        "controller": "PascalCase",
+        "variables": "camelCase"
+      },
+      "frontend": {
+        "components": "PascalCase",
+        "hooks": "camelCase",
+        "variables": "camelCase"
+      }
+    },
+    "architecture": {
+      "backend": {
+        "controllerLocation": "backend/src/main/java/com/tasterate/controller",
+        "serviceLocation": "backend/src/main/java/com/tasterate/service",
+        "entityLocation": "backend/src/main/java/com/tasterate/model"
+      },
+      "frontend": {
+        "screensFolder": "frontend/screens",
+        "componentsFolder": "frontend/components"
+      }
+    },
+    "styleGuide": {
+      "frontend": "Follow Airbnb React Native style guide",
+      "backend": "Use Spring Boot REST API conventions"
+    },
+    "comments": {
+      "language": "English"
+    }
+  }
+  

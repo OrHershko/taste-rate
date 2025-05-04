@@ -1,0 +1,18 @@
+# Node (React Native)
+node_modules
+*.log
+.env
+.expo
+dist
+build
+
+# Java (Spring Boot)
+*.class
+target/
+*.iml
+.idea/
+*.jar
+*.war
+
+# Cursor
+.cursor/cache
