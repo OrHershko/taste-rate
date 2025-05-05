@@ -1,16 +1,19 @@
 package com.tasterate.model;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-@Entity // Marks this class as a JPA entity (maps to a database table)
+import lombok.Data;
+
+@Entity
+@Data
 public class Dish {
-
-    @Id  //Marks this field as the primary key
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increments the ID
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
     private String description;
-
-    // Getters & Setters
 }
