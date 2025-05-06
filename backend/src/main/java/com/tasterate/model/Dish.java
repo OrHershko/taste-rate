@@ -1,16 +1,23 @@
 package com.tasterate.model;
 
+import lombok.Data;
 import javax.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@Entity // Marks this class as a JPA entity (maps to a database table)
+@Entity
+@Data
 public class Dish {
-
-    @Id  //Marks this field as the primary key
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increments the ID
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
     private String description;
-
-    // Getters & Setters
+    private Double price;
+    private String imageUrl;
+    
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "restaurant_id")
+    @JsonIgnore
+    private Restaurant restaurant;
 }

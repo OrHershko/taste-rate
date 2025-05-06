@@ -15,7 +15,7 @@ The restaurant's overall rating is calculated as the average of all its rated di
 - Spring Data JPA
 
 ### Database
-- PostgreSQL
+- Supabase (PostgreSQL)
 
 ## Core Entities
 
